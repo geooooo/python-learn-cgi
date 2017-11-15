@@ -15,7 +15,8 @@ if os.environ["REQUEST_METHOD"].lower() == "post":
     form = cgi.FieldStorage()
     name = html.escape(form.getfirst("name"))
 
-print("""
+print(
+    """
         <!DOCTYPE html>
         <html lang="ru">
             <head>
